@@ -142,10 +142,12 @@ function endGame(behavior) {
 		popup.style.display = "block";
 		popup.src = "../src/assets/imgs/failed.png";
 		lose.play();
+		document.body.style.pointerEvents = "none";
 	} else {
 		// popup
 		popup.style.display = "block";
 		popup.src = "../src/assets/imgs/passed.png";
 		success.play();
+		document.body.style.pointerEvents = "none";
 	}
 }
